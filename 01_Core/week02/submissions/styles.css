@@ -28,43 +28,97 @@ body {
 	height: 0;
 	}
 
-/* Header */
+/* Nav */
 
-header nav {
-    text-align: center;
-    background: #63030b;
-	color: #f2f3ee;
-}
+.navbar {
+	overflow: hidden;
+	background-color: #63030b;
+	text-align: center;
+	padding-left: 170px;
+  }
+  
+  .navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  .dropdown {
+	float: left;
+	overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit; 
+	margin: 0; 
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: #d8b726;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+	background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
 
-header nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: inline-block;
-    line-height: 141px;
-}
 
-header nav ul li {
-	display: inline-block;
-    padding: 0 20px;
-}
-header nav ul li a{
-    color: #f2f3ee;
-    text-decoration: none;
-    list-style: none;
-    font-size: 20px;
-}
-header nav ul li a:hover {
-	color: #5b5c5e;
-	padding-top: 20px;
-}
+  .sidenav {
+	width: 90px;
+	height: 495px;
+	position: fixed;
+	z-index: 1;
+	top: 30px;
+	left: 20px;
+	background: #63030b;
+	overflow-x: hidden;
+	padding: 8px 0;
+  }
+  
+  .sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 14px;
+	color: #d8b726;
+	display: block;
+  }
 
 /* Index */
 
 #purpose{
 width: 600px;
 text-align: center;
-margin: 0px auto 60px;
+margin: -30px auto 60px;
 }
 
 #learnMore{
@@ -89,7 +143,15 @@ text-align: center;
 
 /* My Perfect Day */
 
+#myDay {
+	text-align: center;
+}
 
+#myDay ul {
+	margin: 20px 0px;
+	text-align: center;
+	list-style-position: inside;
+}
 
 /* Resources */
 
@@ -97,7 +159,19 @@ text-align: center;
 
 /* Join */
 
+#sign-up{
+	text-align: center;
+}
 
+#sign-up h1 {
+	margin-top: 20px;
+}
+
+#sign-up form {
+border-style: solid;
+margin: 20px auto;
+width: 400px;
+}
 
 /* Footer */
 

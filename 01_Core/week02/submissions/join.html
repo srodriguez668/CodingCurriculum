@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,95 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
     <div class="container">
         <header>
             <nav>
-                <ul>
-                    <li><a href="Index.html">Home</a></li>
-                    <li><a href="myPerfectDay.html">My Perfect Day</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="members.html">Members</a></li>
-                </ul>
+                <div class="navbar">
+                    <a href="Index.html">Home</a>
+                    <a href="myPerfectDay.html">Perfect Day</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="join.html">Join</a>
+                    <a href="members.html">Members</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </header>
+
+
+        <div id="sign-up">
+            <h1>Join our community! </h1><br>
+
+            <form id="form" action="" method="get" target="_blank"><br>
+
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+
+                Gender: <br>
+                <input type="radio" name="gender"> Male <br>
+                <input type="radio" name="gender"> Female <br><br>
+
+                Favorite Sports: <br>
+                <select>
+                    <option>Soccer</option>
+                    <option>Footbal</option>
+                    <option>Baseball</option>
+                    <option>Basketball</option>
+                    <option>Swimmming</option>
+                </select> <br><br>
+
+                Pizza toppins: <br>
+                <input type="checkbox"> Pineapple <br>
+                <input type="checkbox"> Ham <br>
+                <input type="checkbox"> Cheese <br>
+                <input type="checkbox"> Veggie <br>
+                <input type="checkbox"> Meatlovers <br><br>
+
+                <input id="save" type="submit" value="Save"><br><br>
+
+            </form>
+
+            <p>Members include:</p>
+            <div id="members-include">
+                <ul id="all-members"> 
+
+                </ul>
+            </div>
+            <br><br><br><br>
+
+        </div>
+
+
+        <footer class="main">
+
+            <div id="uncopyright">
+                <p>Uncopyright &copy; 2020 <strong>Santiago Rodriguez</strong></p>
+            </div><!-- end uncopyright -->
+
+            <div id="credits">
+                <p>Follow us on
+                    <a href="http://Facebook.com/" target="_blank">Facebook</a>
+                    <a href="http://twitter.com/" target="_blank">Twitter</a>
+                    <a href="http://Instagram.com/" target="_blank">Instagram</a>
+                </p>
+            </div><!-- end credits -->
+
+        </footer>
+
     </div><!-- end container -->
-    
-    <footer class="main">
-
-        <div id="uncopyright">
-            <p>Uncopyright &copy; 2020 <strong>Santiago Rodriguez</strong></p>
-        </div><!-- end uncopyright -->
-
-        <div id="credits">
-            <p>Follow us on
-                <a href="http://Facebook.com/" target="_blank">Facebook</a>
-                <a href="http://twitter.com/" target="_blank">Twitter</a>
-                <a href="http://Instagram.com/" target="_blank">Instagram</a>
-            </p>
-        </div><!-- end credits -->
-
-    </footer>
-
 
 </body>
 
