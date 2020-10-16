@@ -1,0 +1,119 @@
+/* General */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+	background: #f2f3ee;
+	color: #4b2707;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	font-size: 14px;
+	font-family: 'Open Sans', "Helvetica Neue", Arial, sans-serif;
+}
+
+.container {
+	width: 900px;
+	margin: 0 auto;
+    padding: 30px 24px;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+
+/* Header */
+
+header nav {
+    text-align: center;
+    background: #63030b;
+	color: #f2f3ee;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+    line-height: 141px;
+}
+
+header nav ul li {
+	display: inline-block;
+    padding: 0 20px;
+}
+header nav ul li a{
+    color: #f2f3ee;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+}
+header nav ul li a:hover {
+	color: #5b5c5e;
+	padding-top: 20px;
+}
+
+/* Index */
+
+#purpose{
+width: 600px;
+text-align: center;
+margin: 0px auto 60px;
+}
+
+#learnMore{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+}
+
+#started {
+width: 450px;
+float: left;
+text-align: center;
+margin-bottom: 50px;
+}
+
+#members {
+width: 450px;
+float: right;
+text-align: center;
+}
+
+/* My Perfect Day */
+
+
+
+/* Resources */
+
+
+
+/* Join */
+
+
+
+/* Footer */
+
+footer.main {
+	background: #63030b;
+	color: #f2f3ee;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer.main a {
+    color: #d8b726;
+    text-decoration: none;
+    list-style: none;
+}
+
+footer.main a:hover {
+	color: #5b5c5e;
+}
