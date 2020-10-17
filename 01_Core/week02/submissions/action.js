@@ -1,34 +1,48 @@
-function sortList() {
-    var list, i, switching, b, shouldSwitch;
+const memberNames = []
 
-    list = document.getElementById("all-memebers");
+// this will start when button is pressed
+addMember = () => {
+    event.preventDefault();
+    let fname = document.getElementById("fname").value;
+    let lname = document.getElementById("lname").value;
+    let fullName = `${fname} , <div class = "lname"> ${lname} </div>`;
 
-    switching = true;
-    /* Make a loop that will continue until
-    no switching has been done: */
+    memberNames.push(fullName);
 
-    while (switching) {
+    let sorted = memberNames.sort(compare);
+    console.log(sorted);
 
-      switching = false;
-      b = list.getElementsByTagName("LI");
+    deleteLi();
+    displayli();
 
-      for (i = 0; i < (b.length - 1); i++) {
-        shouldSwitch = false;
-        
-        /* Check if the next item should
-        switch place with the current item: */
-        if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
-          /* If next item is alphabetically lower than current item,
-          mark as a switch and break the loop: */
-          shouldSwitch = true;
-          break;
-        }
-      }
-      if (shouldSwitch) {
-        /* If a switch has been marked, make the switch
-        and mark the switch as done: */
-        b[i].parentNode.insertBefore(b[i + 1], b[i]);
-        switching = true;
-      }
-    }
-  }
+    document.getElementById("fname").value="";
+    document.getElementById("lname").value="";
+}
+
+//split name to sort by last name
+function compare(a, b)  {
+    let splitA = a.split(",");
+    let splitB = b.split(",");
+    let lastA = splitA[splitA.length - 1];
+    let lastB = splitB[splitB.length - 1];
+
+    if (lastA < lastB) return -1;
+    if (lastA > lastB) return 1;
+    return 0;
+}
+
+//display array by adding each name as an li
+function displayli () {
+    memberNames.forEach((i)=> {
+        let li = document.createElement('li');
+        document.getElementById("all-members").appendChild(li);
+        li.innerHTML += i;
+    })
+}
+
+
+//delete old list in html
+function deleteLi () {
+    var ul = document.getElementById("all-members");
+    ul.innerHTML = "";   
+}

@@ -173,6 +173,17 @@ margin: 20px auto;
 width: 400px;
 }
 
+#all-members {
+	list-style-type: none;
+
+}
+
+.lname {
+	color: red;
+	font-weight: bold;
+	display: inline-block;
+}
+
 /* Footer */
 
 footer.main {
