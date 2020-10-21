@@ -9,8 +9,7 @@ addMember = () => {
 
     memberNames.push(fullName);
 
-    let sorted = memberNames.sort(compare);
-    console.log(sorted);
+    memberNames.sort(compare);
 
     deleteLi();
     displayli();
