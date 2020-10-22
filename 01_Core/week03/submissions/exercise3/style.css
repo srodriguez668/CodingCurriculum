@@ -4,22 +4,98 @@
     width: 240px;
 }
 
-.div1, .div2, .div3, .div4 {
+.div1, .div2, .div3 {
     background: blue;
     width: 100px;
     height: 100px;
     margin: 10px;
 }
 
-.div5{
+.div4 {
+    position: relative;
+    background: blue;
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: 10px;
+}
+
+.div4::before {
+    position: absolute;
+    content: "";
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 4;
+    bottom: 95px;
+    right: 95px;
+}
+
+.div4::after {
+    position: absolute;
+    content: "";
     background: red;
     width: 100px;
     height: 100px;
-    margin: 10px;
-    position: relative;
-    top: -180px;
-    left: 60px;
-    z-index: 3;
+    z-index: 2;
+    bottom: 60px;
+    right: 60px;
     transform: rotate(45deg);
-    shape-outside: circle();
 }
+
+.div5 {
+    margin: 50px 0;
+    position: relative;
+    bottom: 205px;
+    left: 20px;
+    display: block;
+    color: black;
+    width: 0px;
+    height: 0px;
+    border-right:  100px solid transparent;
+    border-bottom: 70px  solid black;
+    border-left:   100px solid transparent;
+    -moz-transform:    rotate(35deg) scale(.075);
+    -webkit-transform: rotate(35deg) scale(.075);
+    -ms-transform:     rotate(35deg) scale(.075);
+    -o-transform:      rotate(35deg) scale(.075);
+    transform: rotate(285deg) scale(.075);
+    z-index: 6;
+ }
+ .div5:before {
+    border-bottom: 80px solid black;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 10px;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    -webkit-transform: rotate(-35deg);
+    -moz-transform:    rotate(-35deg);
+    -ms-transform:     rotate(-35deg);
+    -o-transform:      rotate(-35deg);
+    z-index: 6;
+ 
+ }
+ .div5:after {
+    position: absolute;
+    display: block;
+    color: black;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid black;
+    border-left: 100px solid transparent;
+    -webkit-transform: rotate(-70deg);
+    -moz-transform:    rotate(-70deg);
+    -ms-transform:     rotate(-70deg);
+    -o-transform:      rotate(-70deg);
+    content: '';
+    z-index: 6;
+ }

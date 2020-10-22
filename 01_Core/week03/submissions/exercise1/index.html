@@ -7,10 +7,31 @@
   <title>CSS Exercise 1</title>
   <meta name="description" content="ITA CSS Layout Exercise">
   <meta name="author" content="Mark Kroh">
-  <link rel="stylesheet" href="style.css">
 
   <style>
-  	
+  	.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 240px;
+}
+
+.div1, .div2, .div3, .div4 {
+    background: blue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.div5{
+    background: red;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    position: relative;
+    top: -180px;
+    left: 60px;
+    z-index: 3;
+}
   </style>
 </head>
 <body>

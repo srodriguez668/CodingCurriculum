@@ -7,11 +7,71 @@
   <title>CSS Exercise 6</title>
   <meta name="description" content="ITA CSS Layout Exercise">
   <meta name="author" content="Mark Kroh">
-  <link rel="stylesheet" href="style.css">
-
 
   <style>
-  	
+  	.container {
+    display: grid;
+    grid-template-columns: repeat(16,6.25%);
+    grid-template-rows: repeat(6,16.66%);
+    width: 400px;
+    height: 280px;
+}
+
+.div1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    grid-column: 4/6;
+    grid-row: 1/2;
+    border: solid white 5px;
+    z-index: 1;
+}
+
+.div2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 153, 33);
+    grid-column: 10/12;
+    grid-row: 1/2;
+    border: solid white 5px;
+    z-index: 1;
+    transform: rotate(340deg);
+}
+
+.div3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 251, 46);
+    grid-column: 8/10;
+    grid-row: 3/4;
+    border: solid white 5px;
+    z-index: 2;
+    transform: rotate(325deg);
+}
+
+.div4 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 45, 250);
+    grid-column: 5/7;
+    grid-row: 2/3;
+    border: solid white 5px;
+    z-index: 3;
+    transform: rotate(25deg);
+
+}
+
+.div5 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(239, 121, 235);
+    grid-column: 2/4;
+    grid-row: 2/3;
+    border: solid white 5px;
+    z-index: 4;
+    transform: rotate(15deg);
+
+}
   </style>
 </head>
 <body>
