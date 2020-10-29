@@ -66,13 +66,13 @@ body {
   }
   
   .dropbtn{
-    width: 4rem;
+    width: 5rem;
     height: 2rem;
-    background-image: url("img/menu-icon.png");
+    background-image: url("../img/menu-icon.png");
     background-size: cover; 
     }
 
-  .navbar a:hover, .mobile-nav:hover .dropbtn, .dropbtn:focus {
+  .navbar a:hover{
     background-color: rgb(144, 193, 240);
   }
   
@@ -82,7 +82,6 @@ body {
     background-color: #f9f9f9;
     min-width: 10rem;
     box-shadow: 0rem .5rem 1rem 0rem rgba(0,0,0,0.2);
-    z-index: 1;
   }
   
   .dropdown-content a {
