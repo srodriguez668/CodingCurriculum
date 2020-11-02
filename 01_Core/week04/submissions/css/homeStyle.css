@@ -156,10 +156,16 @@ a{
     width: 10rem;
 }
 
-#who, #promise, .feature-product{
+#who, #promise {
     width: 75%;
     max-width: 50rem;
     font-size: 1.25rem;
+}
+
+.feature-product{
+  width: 75%;
+  max-width: 40rem;
+  font-size: 1.25rem;
 }
 
 .prev, .next {

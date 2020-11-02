@@ -57,6 +57,13 @@
     background-color: rgb(144, 193, 240, .25);
 }
 
+.buy-quantity{
+    height: 1.7rem;
+    font-size: 1.5rem;
+    width: 2rem;
+    text-align: center;
+}
+
 .buy-now{
     width: 10rem;
     height: 2rem;
