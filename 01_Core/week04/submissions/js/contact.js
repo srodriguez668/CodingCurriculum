@@ -34,7 +34,7 @@ function validateForm() {
   }
   let c = document.forms["contact-inputs"]["email"].value;
   if(emailIsValid(c)==false) {
-    alert("must input a valid email");
+    alert("Must input a valid email");
     return false;
   }
 }
